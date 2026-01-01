@@ -40,15 +40,15 @@ FZ_scene* FZ_new_scene(){
     return new_scene;
 }
 
-int FZ_tick(FZ_scene* scene){
+int FZ_tick(FZ_scene* scene, double deltatime){
     for (int i = 0; i < scene->shape_count; i++){
         FZ_shape* shape = scene->shapes[i];
 
         if (!(shape->flags & FZ_SHAPE_IS_STATIC)){
-            shape->velocity = v2_ew_add(shape->velocity, scene->gravity);
+            shape->velocity = v2_ew_add(shape->velocity, v2_times(scene->gravity, deltatime));
 
-            shape->position = v2_ew_add(shape->position, shape->velocity);
-            shape->angle += shape->angular_veclocity;
+            shape->position = v2_ew_add(shape->position, v2_times(shape->velocity, deltatime));
+            shape->angle += shape->angular_veclocity * deltatime;
         }
 
         for (int j = 0; j < shape->point_count; j++){
