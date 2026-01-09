@@ -1,6 +1,6 @@
 # Fizzix, a 2D and 3D Physics Engine
 
-# NOT FINISHED. CANNOT SOLVE 2D or 3D PHYSICS
+# NOT FINISHED. CANNOT SOLVE 2D or 3D PHYSICS YET
 
 ### Etymology
 
