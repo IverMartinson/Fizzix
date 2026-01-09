@@ -1,6 +1,3 @@
--defualt constructors for new_something funcs
--basic nessecary functions
--headers
--debug renderer
--basic 2d euler physics (velocity angular velocity)
--deltatime
+-collision detection
+-collision resolution
+-collision debug stuff

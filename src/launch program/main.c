@@ -19,18 +19,17 @@ int main(){
     shape_2->flags = FZ_SHAPE_IS_STATIC;
 
     shape_1->scale = (FZ_vector_2){50, 50};
-    shape_2->scale = (FZ_vector_2){190, 40};
+    shape_2->scale = (FZ_vector_2){190, 100};
 
-    shape_1->position = (FZ_vector_2){0, 150};
+    shape_1->position = (FZ_vector_2){-100, 50};
     shape_2->position = (FZ_vector_2){0, -150};
-
 
     scene->shape_count = 2;
 
-    shape_1->velocity = (FZ_vector_2){10, 20};
+    shape_1->velocity = (FZ_vector_2){60, 300};
     
-    shape_1->angular_veclocity = 1;
-    shape_2->angular_veclocity = 2;
+    shape_1->angular_veclocity = 5;
+    // shape_2->angular_veclocity = 2;
 
     long int start, end;
     double fps = 0;
