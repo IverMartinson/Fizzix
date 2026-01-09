@@ -2,5 +2,5 @@
 
 ### Etymology
 
-Physics -> Phys & Ics -> Fizz & Ix
-Fizz, like a sour, lemony drink might have
+* Physics -> Phys & Ics -> Fizz & Ix
+* Fizz, like a sour, lemony drink might have
