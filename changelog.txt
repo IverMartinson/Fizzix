@@ -1,1 +1,1 @@
--removed licence
+-completed basic collision solving and resolution

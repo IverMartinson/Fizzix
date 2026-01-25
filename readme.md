@@ -1,6 +1,8 @@
 # Fizzix, a 2D and 3D Physics Engine
 
-# NOT FINISHED. CANNOT SOLVE 2D or 3D PHYSICS YET
+## Milestones
+
+ * Working collision resolution for convex shapes!!! `Completed January 25th, 2026`
 
 ### Etymology
 

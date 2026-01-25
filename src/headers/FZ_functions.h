@@ -1,7 +1,7 @@
 #ifndef FZ_FUNCTIONS_H
 #define FZ_FUNCTIONS_H
 
-#include "FZ_structs.h"
+#include "FZ_types.h"
 
 FZ_scene* FZ_new_scene();
 FZ_shape* FZ_new_shape();

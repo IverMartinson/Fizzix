@@ -1,0 +1,3 @@
+-unoptimized
+-concave polygons wont work, need to add splitting into tris
+-moment of interia formula assumes rectangle

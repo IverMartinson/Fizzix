@@ -1,10 +1,14 @@
 #ifndef FZ_MATH_H
 #define FZ_MATH_H
 
-#include "FZ_structs.h"
+#include "FZ_types.h"
 
 double distance_2(FZ_vector_2 a, FZ_vector_2 b){
     return sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
+}
+
+double squared_distance_2(FZ_vector_2 a, FZ_vector_2 b){
+    return (a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y);
 }
 
 FZ_vector_2 v2_mul(FZ_vector_2 vector, double value){
@@ -90,6 +94,14 @@ double project_along_vectors_normal(FZ_vector_2 a, FZ_vector_2 b, FZ_vector_2 c)
     c = v2_ew_sub(c, a);
 
     return (v2_dot(c, b) / v2_dot(b, b));
+}
+
+FZ_vector_2 v2_scalar_cross(FZ_vector_2 vector, double value){
+    return v2_mul(v2_rotate_neg_90(vector), value);
+}
+
+double v2_v2_cross(FZ_vector_2 a, FZ_vector_2 b) {
+    return a.x * b.y - a.y * b.x;
 }
 
 #endif
